@@ -178,8 +178,8 @@ stateMachine = State:create{
 							setSpeed(4,7)	-- left wheel's speed: 4, and right wheel's speed: 7	
 						elseif (getProximityN(12) >= 0.96 and getProximityN(1)==0) then	-- to smouthly passes the obstacle by turning left
 							setSpeed(3,10)	-- left wheel's speed: 3, and right wheel's speed: 10
-						elseif (getProximityN(12) >= 0.99 and getProximityN(1)==0) then	-- to smouthly passes the obstacle by turning left
-							setSpeed(-2,-2)	-- left wheel's speed: -2, and right wheel's speed: -2
+						--elseif (getProximityN(12) >= 0.99 and getProximityN(1)==0) then
+							--setSpeed(-2,-2)
 						else
 							-- left wheel's speed: rxNumbersNT[1] (sent by the UAV), and right wheel's speed: rxNumbersNT[2] (sent by the UAV):
 							setSpeed(rxNumbersNT[1], rxNumbersNT[2])
